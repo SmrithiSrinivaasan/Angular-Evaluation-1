@@ -1,0 +1,48 @@
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">DATE</th>
+      <th scope="col">METHOD</th>
+      <th scope="col">IP ADD</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let doc of docs; index as i">
+      <td>{{i+1}}</td>
+      <td>{{doc.date}}</td>
+      <td>{{doc.method}}</td>
+      <td>{{doc.ipAddress}}</td>
+    </tr>
+  </tbody>
+</table>
+
+<!-- {
+  "docs": [
+    {
+      "date": "2020-02-10",
+      "method": "POST",
+      "action": "string",
+      "endpoint": "string",
+      "user": "string",
+      "collectionName": "string",
+      "childCollectionName": "string",
+      "associationType": "ONE_MANY",
+      "documents": [
+        "string"
+      ],
+      "payload": {},
+      "params": {},
+      "result": {},
+      "statusCode": 0,
+      "responseMessage": "string",
+      "isError": true,
+      "ipAddress": "string",
+      "notes": "string",
+      "_id": "string"
+    }
+  ],
+  "pages": "string",
+  "items": "string"
+}
+ -->
